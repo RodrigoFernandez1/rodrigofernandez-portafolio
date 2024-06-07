@@ -100,7 +100,7 @@ body.menu-open {
 
 /*fin de configuracion*/
 
-/*configuracion de mi main*/
+/*configuracion de mi main* texto de presentacion y foto*/
 main {
   display: flex;
   flex-wrap: nowrap;
@@ -111,12 +111,14 @@ main {
   padding: 20px;
 }
 
-/*estilos del contenedor principal*/
-
+#textos {
+  display: flex;
+  justify-content: flex-start;
+}
 .titulo-sencu h1 {
   color: var(--header-color);
-  font-size: 3.5em;
-  width: 130%;
+  font-size: 3em;
+  min-width: 50%;
 }
 .presenta h1 {
   color: var(--textos-color);
@@ -574,7 +576,6 @@ form.form_contact input[type="submit"]:hover {
     justify-content: center;
     right: 10%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: px;
     border-radius: 5px;
     z-index: 9999;
     overflow: hidden;
@@ -618,16 +619,17 @@ form.form_contact input[type="submit"]:hover {
 
   .dropdown2 {
     display: flex;
-    margin-top: 6%;
     justify-content: center;
     align-items: center;
-    font-size: 2em;
-    gap: -11em;
+    font-size: 1.60em;
   }
 
-  .bx-x {
-    font-size: 2em;
+  .bx-x, .sali-x  button{
+    font-size: 1.20em;
+    margin-top: -12%;
+    background: var(--header-color);
   }
+  
 
   #menu-toggle:checked ~ body {
     overflow: hidden;
@@ -664,7 +666,7 @@ form.form_contact input[type="submit"]:hover {
     display: flex;
     text-align: center;
     left: 22%;
-    font-size: 3.55rem;
+    font-size: clamp(3rem, 2.5vw, 3rem);
   }
 
   .img-1 {
@@ -674,6 +676,10 @@ form.form_contact input[type="submit"]:hover {
 
 /*celulares*/
 @media only screen and (max-width: 527px) {
+  .titulo-prin {
+    margin-top: -14%;
+  }
+
   .titulo-sencu h1 {
     display: flex;
     margin-left: 1%;
