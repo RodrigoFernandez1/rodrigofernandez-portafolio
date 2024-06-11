@@ -207,7 +207,7 @@ nav a {
   width: 20%;
   border-radius: 20em;
   border: 3px solid var(--text-color);
-  color: var(--text-color);
+  color: var(--span-color);
 }
 
 .Experiencia {
