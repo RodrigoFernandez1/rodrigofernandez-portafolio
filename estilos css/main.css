@@ -42,7 +42,7 @@ nav {
   padding: 10px 20px;
   border: 2px solid #ffffff;
   border-radius: 5px;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
@@ -53,15 +53,18 @@ nav {
 }
 
 .disponi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   background-color: #fff;
   border: 1px solid #00ff1e;
   color: #000000;
   padding: 5px;
   position: relative;
-  width: 11.2em;
-  height: 2em;
+  width: 9.2em;
+  height: 1.40em;
   transition: 0.5s;
-  font-size: 17px;
   border-radius: 0.4em;
 }
 
@@ -76,6 +79,10 @@ nav {
 
 .disponi:hover {
   background-color: #25d366;
+}
+
+.disponi p {
+  font-size: 70%;
 }
 
 main {
