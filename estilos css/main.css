@@ -203,7 +203,7 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--textos-color);
+  background-color: var(--span-color);
   width: 20%;
   border-radius: 20em;
   border: 3px solid var(--text-color);
