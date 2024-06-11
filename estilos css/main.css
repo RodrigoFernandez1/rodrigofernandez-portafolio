@@ -203,10 +203,10 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--span-color);
+  background-color: var(--textos-color);
   width: 20%;
   border-radius: 20em;
-  border: 3px solid var(--text-color);
+  border: 3px solid var(--span-color);
   color: var(--span-color);
 }
 
