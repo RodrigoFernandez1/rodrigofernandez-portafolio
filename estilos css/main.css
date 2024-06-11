@@ -30,7 +30,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 3%;
+  margin: 5% auto;
+  padding-bottom: 4%;
 }
 
 nav {
@@ -84,9 +85,10 @@ main {
   flex-direction: column;
   flex-wrap: wrap;
   text-align: left;
+  max-width: 1000px;
   margin: 0 auto;
   width: 80%;
-  padding: 2em;
+  padding: 20px;
   box-sizing: border-box;
   transition: width 0.5s ease;
 }
@@ -95,12 +97,15 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
   gap: 2%;
+  flex-shrink: 100%;
 }
 
 .img-disp img {
-  width: 150px;
+  width: clamp(100px, 15vw, 150px);
   border-radius: 50%;
+  flex-shrink: 0;
 }
 
 .prese-section {
@@ -111,14 +116,13 @@ main {
 }
 
 .prese-section h1 {
-  font-size: 3em;
+  font-size: clamp(1.90em, 4vw, 3em);
   color: var(--textos-color);
 }
 
 .prese-section p {
   color: var(--textos-color);
-  font-size: 1.4em;
-  width: 79%;
+  font-size: clamp(1.60em, 2.5vw, 1.4em);
 }
 
 .active {
@@ -190,36 +194,11 @@ nav a {
   border-radius: 20em;
   border: 3px solid var(--span-color);
   color: var(--span-color);
+
 }
 
 .Experiencia {
   display: flex;
   justify-content: left;
   align-items: center;
-}
-
-
-
-
-
-
-/*celulares*/
-@media only screen and (max-width: 395px) {
-  nav {
-    margin-top: 2em;
-  }
-
-  main {
-    margin-right: 20%;
-    margin-top: 19%;
-  }
-
-  .prese-section h1 {
-    font-size: 2em;
-  }
-
-  .prese-section p {
-    font-size: 1.30em;
-    width: 15em;
-  }
 }
