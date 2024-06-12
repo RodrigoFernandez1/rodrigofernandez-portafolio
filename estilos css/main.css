@@ -31,26 +31,27 @@ header {
   justify-content: center;
   align-items: center;
   margin: 5% auto;
-  padding-bottom: 4%;
+  padding: 1%;
 }
 
 nav {
   display: flex;
   flex-direction: row;
   position: fixed;
-  background-color: transparent #000000;
+  background-color: rgba(255, 255, 255, 0.867);
   padding: 10px 20px;
-  border: 2px solid #ffffff;
   border-radius: 5px;
   font-size: 10px;
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease,
-    transform 0.1s ease;
   gap: 1em;
 }
+
+nav a {
+  color: #191919be  ;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} 
 
 .disponi {
   display: flex;
@@ -63,7 +64,7 @@ nav {
   padding: 5px;
   position: relative;
   width: 9.2em;
-  height: 1.40em;
+  height: 1.59em;
   transition: 0.5s;
   border-radius: 0.4em;
 }
@@ -82,7 +83,7 @@ nav {
 }
 
 .disponi p {
-  font-size: 70%;
+  font-size: 79%;
 }
 
 main {
@@ -94,10 +95,11 @@ main {
   text-align: left;
   max-width: 1000px;
   margin: 0 auto;
+  margin-top: -6em;
   width: 80%;
-  padding: 20px;
   box-sizing: border-box;
   transition: width 0.5s ease;
+  height: 100vh;
 }
 
 .img-disp {
@@ -141,8 +143,7 @@ main {
   display: flex;
   gap: 2em;
 }
-.button a,
-nav a {
+.button a {
   color: var(--textos-color);
 }
 .button {
@@ -201,11 +202,21 @@ nav a {
   border-radius: 20em;
   border: 3px solid var(--span-color);
   color: var(--span-color);
-
+  width: 100px;
 }
 
 .Experiencia {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
+}
+
+.Experiencia-porta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: var(--span-color);
+  gap: 5%;
+  font-size: 2em;
 }
