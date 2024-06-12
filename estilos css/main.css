@@ -248,6 +248,40 @@ main {
 aside {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   margin: 0 auto;
+  width: 80%;
+}
+
+.Proyectos-titu {
+  display: flex;
+  align-items: center;
+  gap: 2%;
+  font-size: 3.60vw;
+  width: 20em;
+  color: var(--textos-color);
+  padding-bottom: 10%;
+}
+
+.cuadro-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  grid-template-rows: auto auto;
+  grid-template-areas: 
+  "img-proyec"
+  "cuadro-1";
+  gap: 10%;
+  width: 89%;
+}
+
+.cuadro-1 ol {
+  gap: 20%;
+}
+.cuadro-1 h1 {
+  font-size: 2em;
+}
+.img-proyec img{
+  width: 29vw;
 }
