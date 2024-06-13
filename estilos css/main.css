@@ -252,6 +252,7 @@ aside {
   align-items: center;
   margin: 0 auto;
   width: 50%;
+  gap: 30em;
 }
 
 .Proyectos-titu {
@@ -261,7 +262,7 @@ aside {
   gap: 2%;
   color: var(--textos-color);
   padding-bottom: 10%;
-  font-size: 2.60em;
+  font-size: 2.6em;
 }
 
 .cuadro-1 {
@@ -270,7 +271,8 @@ aside {
   justify-content: center;
   align-items: center;
   grid-template-rows: auto auto;
-  gap: 16%;
+  gap: 1em;
+  padding-bottom: 20%;
 }
 
 .cuadro-1 ol {
@@ -310,6 +312,58 @@ aside {
   }
 
   .galeri-protec {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+}
+
+
+.cuadro-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  grid-template-rows: auto auto;
+  gap: 1em;
+}
+
+.cuadro-2 ol {
+  grid-column: 1 / -1;
+  grid-row: 1;
+}
+
+.cuadro-2 h1 {
+  font-size: 2em;
+}
+
+.galeri-protec2 {
+  width: 99%;
+  max-width: 600px;
+  overflow: hidden;
+  position: relative;
+  grid-column: 1 / -1;
+  grid-row: 2;
+}
+
+.galeri-protec2 .galeri2 {
+  width: 100%;
+  border: 0.19em solid var(--textos-color);
+  flex-shrink: 0;
+  transition: opacity 0.5s ease;
+}
+
+@supports (display: grid) {
+  .cuadro-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .cuadro-2 ol {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+
+  .galeri-protec2 {
     grid-column: 1 / -1;
     grid-row: 2;
   }
