@@ -30,7 +30,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 5% auto;
+  margin: 3% auto;
   padding: 1%;
 }
 
@@ -102,7 +102,7 @@ main {
   width: 80%;
   box-sizing: border-box;
   transition: width 0.5s ease;
-  padding-top: 10%;
+  padding-top: 6%;
 }
 
 .img-disp {
