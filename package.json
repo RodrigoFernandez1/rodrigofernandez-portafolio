@@ -1,0 +1,19 @@
+{
+  "name": "portafolio",
+  "version": "1.0.0",
+  "description": "Mi portafolio como Developer Front-end",
+  "main": "index.js",
+  "scripts": {
+    "test": "{"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RodrigoFernandez1/rodrigofernandez-portafolio.git"
+  },
+  "author": "Rodrigo Fernández",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RodrigoFernandez1/rodrigofernandez-portafolio/issues"
+  },
+  "homepage": "https://github.com/RodrigoFernandez1/rodrigofernandez-portafolio#readme"
+}

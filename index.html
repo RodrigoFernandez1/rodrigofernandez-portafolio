@@ -29,9 +29,11 @@
     <div class="conteiner">
       <header>
         <nav>
-          <a href="#" id="nav-experiencia" class="active">Experiencia</a>
-          <a href="#" id="nav-proyectos">Proyectos</a>
-          <a href="#">Acerca de</a>
+          <a href="#Experiencia" id="nav-experiencia" class="active"
+            >Experiencia</a
+          >
+          <a href="#Proyectos" id="nav-proyectos">Proyectos</a>
+          <a href="#Acerca-de">Sobre mi</a>
           <a href="#">Contacto</a>
         </nav>
       </header>
@@ -73,7 +75,7 @@
         </section>
       </main>
 
-      <section class="Experiencia">
+      <section class="Experiencia" id="Experiencia">
         <dl class="mi-presen">
           <div class="Experiencia-titu">
             <i class="bx bxs-briefcase-alt-2" style="color: #008fff"></i>
@@ -90,7 +92,7 @@
         </dl>
       </section>
 
-      <aside>
+      <aside id="Proyectos">
         <div>
           <div class="Proyectos-titu">
             <i class="bx bx-code-alt" style="color: #ffffff"></i>
@@ -101,7 +103,7 @@
             <ol>
               <h1 style="color: #6790ca">Proyecto 1</h1>
               <h2 style="color: #ffcd6b">Diseñado y pasado a codigo.</h2>
-              <p style="color: #ffffff">
+              <p class="p-proyec" style="color: #ffffff">
                 Como primer proyecto está mi portafolio, a partir que fui
                 adquiriendo más conocimientos, fui mejorando, tanto lo visual
                 como responsivo. Fue un desafío, pero lo constante que fui en
@@ -123,7 +125,7 @@
             <ol>
               <h1 style="color: #6790ca">Proyecto 2</h1>
               <h2 style="color: #ffcd6b">Desarrollado.</h2>
-              <p style="color: #ffffff">
+              <p class="p-proyec" style="color: #ffffff">
                 En estos dos años he estudiado y desarrollado, páginas según mis
                 estudios. Esta página es diferente, la base en un cuaderno. Que
                 en llene de recursos para mejorar mi web. En esta página quiero
@@ -134,19 +136,67 @@
                   target="_blank"
                   href="https://mundoprogramador.netlify.app/"
                   class="active"
-                  >Mundo programado</a
+                  >Mundo del dev</a
                 >
               </p>
             </ol>
 
             <div class="galeri-protec2">
-              <img class="galeri2" src="/img/pafina-recursos.png" alt="" />
+              <img class="galeri2" src="/img/mundeldev.png" alt="" />
             </div>
           </section>
         </div>
       </aside>
-    </div>
 
+      <section class="Acerca-de" id="Acerca-de">
+        <div class="acerca-todo">
+          <div class="acerca-de-1">
+            <i class="bx bx-user-circle" style="color: #fffb05"></i>
+            <h1>Sobre Mi</h1>
+          </div>
+
+          <div class="para-fo">
+            <p class="para-fo">
+              ¡Hola! Me llamo Rodrigo Fernández,empecé en la programación hace 3
+              años desarrollando módulos en odoo Actualmente, me encuentro
+              enfocado en avanzar mi carrera como Front-End Developer, tras dos
+              años de estudio autodidacta y dedicación inquebrantable en esta
+              área. Aunque soy un developer junior, mi entusiasmo y compromiso
+              con el aprendizaje continuo me han permitido adquirir habilidades
+              sólidas en HTML, CSS y JavaScript.
+            </p>
+
+            <p>
+              Actualmente, manejo tecnologías clave como HTML, CSS y JavaScript.
+              Así como Freshworks modernos como React. También estoy.
+              Familiarizado con herramientas esenciales para el desarrollo como:
+              Git, GitHub y NPM. Además, tengo un buen entendimiento de la
+              Arquitectura CSS, lo que me permite crear estilos limpios.
+              Eficientes.
+            </p>
+            <p>
+              Siempre estoy en busca de aprender y dominar nuevas tecnologías
+              que me permitan mejorar mis habilidades y aportar valor a los
+              proyectos en los que participo. Estoy emocionado por las
+              oportunidades que el desarrollo Front-End ofrece y comprometido a
+              crecer y destacarme en este campo.
+            </p>
+          </div>
+        </div>
+
+        <div class="img-acerca">
+          <img src="/img/rodrigo-acerca.jpg" alt="" />
+        </div>
+      </section>
+
+      <footer>
+        <div class="derecho">
+          <i class="bx bx-copyright"
+            ><a href="/index.html" class="rodri"> 2024 Rodrigo Fernandez.</a> Casi todos los derechos reservados.</i
+          >
+        </div>
+      </footer>
+    </div>
     <script src="/js/script.js"></script>
   </body>
 </html>

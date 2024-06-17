@@ -38,18 +38,20 @@ nav {
   display: flex;
   flex-direction: row;
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.867);
+  background: transparent;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 10px;
+  backdrop-filter: blur(8px);
   font-size: 10px;
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
   gap: 1em;
+  z-index: 1000;
 }
 
 nav a {
-  color: #191919be;
+  color: #ffffffbe;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
@@ -71,6 +73,7 @@ nav a.active {
   height: 1.59em;
   transition: 0.5s;
   border-radius: 0.4em;
+  box-sizing: border-box;
 }
 
 .disponi:hover p {
@@ -212,7 +215,7 @@ main {
   margin: 0 auto;
   padding: 2em;
   padding-top: 10%;
-  padding-bottom:10%;
+  padding-bottom: 10%;
   box-sizing: border-box;
   min-width: 79px;
   width: 40%;
@@ -225,7 +228,7 @@ main {
   display: flex;
   align-items: center;
   gap: 2%;
-  font-size: 3.6vw;
+  font-size: 2.9vw;
   width: 20em;
   color: var(--span-color);
 }
@@ -276,6 +279,10 @@ aside {
   padding-bottom: 20%;
 }
 
+.p-proyec {
+  width: 80%;
+  text-align: left;
+}
 .cuadro-1 ol {
   grid-column: 1 / -1;
   grid-row: 1;
@@ -318,7 +325,6 @@ aside {
   }
 }
 
-
 .cuadro-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -353,6 +359,10 @@ aside {
   transition: opacity 0.5s ease;
 }
 
+.galeri2:hover {
+  transform: scale(1.4);
+}
+
 @supports (display: grid) {
   .cuadro-2 {
     display: grid;
@@ -368,4 +378,71 @@ aside {
     grid-column: 1 / -1;
     grid-row: 2;
   }
+}
+
+/*Acerca de mi*/
+.Acerca-de {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding: 3em;
+  min-width: 100px;
+  text-align: center;
+}
+
+.acerca-de-1 {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  gap: 2%;
+  color: var(--textos-color);
+  padding-bottom: 2%;
+  font-size: 1.60em;
+  width: 100%;
+}
+
+.acerca-todo {
+  display: inline-flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-left: 2em;
+  flex-direction: column;
+  width: 50%;
+
+}
+
+.para-fo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2em;
+  color: var(--textos-color);
+}
+
+.img-acerca {
+  flex: 0 0 auto;
+  margin-left: 2em;
+  margin-top: 3.40em;
+  width: 20%;
+  box-sizing: border-box;
+}
+
+/* fooder */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: var(--textos-color);
+  text-decoration: none;
+  width: 100%;
+  padding: 1em;
+}
+
+.derecho a {
+  color: var(--span-color);
+  text-decoration: none;
 }
