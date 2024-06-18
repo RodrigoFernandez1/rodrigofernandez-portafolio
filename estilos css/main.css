@@ -394,48 +394,42 @@ aside {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2em;
-  padding-top: 30px;
-  padding: 3em;
-  min-width: 100%;
-  text-align: center;
+  margin: 0 auto;
+  padding-top: 6%;
   flex-wrap: wrap;
   flex: 1;
+  padding-bottom: 3em;
+}
+
+.acerca-todo {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  text-align: left;
+  flex-direction: column;
+  box-sizing: border-box;
+  max-width: 50%;
 }
 
 .acerca-de-1 {
   display: flex;
-  justify-content: baseline;
+  justify-content: right;
   align-items: center;
-  gap: 2%;
   color: var(--textos-color);
-  padding-bottom: 2%;
-  font-size: 1.6em;
-  width: 100%;
-}
-
-.Acerca-todo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-}
+  gap: 1%;
+  width: 50%;
+  font-size: 2.1em;
+} 
 
 .para-fo {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-width: 100%;
-  flex-wrap: wrap;
-  gap: 1em;
-  width: 30em;
-  color: var(--textos-color);
   text-align: left;
-  padding-top: 0.20em;
+  color: var(--textos-color);
+  gap: 1em;
 }
-
 .img-acerca {
   padding: 1em;
 }
