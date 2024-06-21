@@ -59,13 +59,11 @@ nav {
 }
 
 nav a {
-  color: #ffffffbe;
+  color: #ffffffc7;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-nav a.active {
-  color: #008fff;
-}
+
 
 .disponi {
   display: flex;
