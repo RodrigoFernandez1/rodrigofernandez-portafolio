@@ -49,13 +49,18 @@ nav {
   background: transparent;
   padding: 10px 20px;
   border-radius: 10px;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(30px);
   font-size: 10px;
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
   gap: 1em;
   z-index: 1000;
+  transition: opacity 0.6s ease;
+}
+
+nav:hover > :not(:hover) {
+  opacity: 0.4;
 }
 
 nav a {
