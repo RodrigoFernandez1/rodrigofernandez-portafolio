@@ -68,8 +68,6 @@ nav a {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-
-
 .disponi {
   display: flex;
   justify-content: center;
@@ -111,7 +109,7 @@ nav a {
 
 /* Estilo animado del disponible */
 .disponi::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -50%;
   left: -50%;
@@ -170,7 +168,7 @@ main {
 
 .prese-section h1 {
   padding-top: 1%;
-  font-size: 1.50em;
+  font-size: 1.5em;
   color: var(--textos-color);
 }
 
@@ -308,6 +306,12 @@ aside {
   font-size: 2.1em;
 }
 
+.color-fondo {
+  border-radius: 1%;
+  background-color: var(--textos-color);
+  margin-bottom: 3em;
+}
+
 .cuadro-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -315,11 +319,12 @@ aside {
   align-items: center;
   grid-template-rows: auto auto;
   gap: 1em;
-  padding-bottom: 20%;
+  padding: 1em;
 }
 
 .p-proyec {
   text-align: left;
+  color: var(--fondo-color);
 }
 .cuadro-1 ol {
   grid-column: 1 / -1;
@@ -331,8 +336,6 @@ aside {
 }
 
 .galeri-protec {
-  width: 99%;
-  max-width: 600px;
   overflow: hidden;
   position: relative;
   grid-column: 1 / -1;
@@ -341,11 +344,10 @@ aside {
 
 .galeri-protec .galeri {
   width: 100%;
-  border: 0.19em solid var(--textos-color);
+  border-radius: 4%;
   flex-shrink: 0;
   transition: opacity 0.5s ease;
 }
-
 
 @supports (display: grid) {
   .cuadro-1 {
@@ -371,6 +373,7 @@ aside {
   align-items: center;
   grid-template-rows: auto auto;
   gap: 1em;
+  padding: 1em;
 }
 
 .cuadro-2 ol {
@@ -393,13 +396,10 @@ aside {
 
 .galeri-protec2 .galeri2 {
   width: 100%;
-  border: 0.19em solid var(--textos-color);
+  border: 0.19em solid var(--text-color);
+  border-radius: 4%;
   flex-shrink: 0;
   transition: opacity 0.5s ease;
-}
-
-.galeri2:hover {
-  transform: scale(1.4);
 }
 
 @supports (display: grid) {
@@ -449,7 +449,7 @@ aside {
   gap: 1%;
   font-size: 2em;
   width: 50vw;
-} 
+}
 
 .para-fo {
   display: flex;
@@ -465,7 +465,7 @@ aside {
   padding: 1em;
 }
 
-.img-acerca img{
+.img-acerca img {
   border: 10px double var(--decoral-color);
 }
 
@@ -486,7 +486,7 @@ footer {
 .derecho {
   display: flex;
   justify-content: center;
-  box-sizing: border-box;;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   flex-wrap: wrap;
