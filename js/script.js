@@ -27,3 +27,4 @@ document.addEventListener("DOMContentLoaded", () => {
   // Cambiar de imagen cada 5 segundos
   setInterval(nextImage, 5000);
 });
+

@@ -78,6 +78,7 @@ nav a {
   background-color: #fff;
   border: 1px solid #00ff1e;
   color: #000000;
+  font-weight: 700;
   padding: 5px;
   position: relative;
   width: 9.2em;
@@ -85,6 +86,8 @@ nav a {
   transition: 0.5s;
   border-radius: 0.4em;
   box-sizing: border-box;
+
+  overflow: hidden;
 }
 
 .disponi:hover p {
@@ -103,6 +106,29 @@ nav a {
 .disponi p {
   font-size: 66%;
   font-family: var(--parrafos-font-family);
+  z-index: 1000;
+}
+
+/* Estilo animado del disponible */
+.disponi::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, #25d366, transparent);
+  animation: animate-border 2s linear infinite;
+  border-radius: inherit;
+}
+
+@keyframes animate-border {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 main {
